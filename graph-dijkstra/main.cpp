@@ -29,7 +29,7 @@ public:
     ///return the number of vertics in the graph
     int vertics() const
     {
-        return this->graphSize;
+        return this->graphVertix;
     }
     ///return number of graph edges
     int edges() const

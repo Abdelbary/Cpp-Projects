@@ -3,6 +3,6 @@
  with coast range specified
  compute the average path length from the first node to all other nodes in the generated graph with two different edge dinsity
  20% and 40% 
- ##the output is as follows:
-			-with diensity of :0.2 Average Path Length :6.5
-			-with diensity of :0.4 Average Path Length :3.08
+## the output is as follows:
+			- with diensity of :0.2 Average Path Length :6.5
+			- with diensity of :0.4 Average Path Length :3.08

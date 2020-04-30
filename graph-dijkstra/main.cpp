@@ -2,7 +2,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/**
+this code generate an undirected graph with specified number of nodes and a an edge densities as a presetage
+with coast range specified compute the average path length from the first node to all other nodes
+in the generated graph with two different edge dinsity 20% and 40%
 
+the output is as follows:
+          with diensity of :0.2 Average Path Length :6.5
+		  with diensity of :0.4 Average Path Length :3.08
+
+I have learned how to use lambda function reviewed on STL mainly priority queue get more familiar with graph
+and its representation and got more familiar with OOP in general.
+I also learned how to deal with probabilities and how to be able to deal with them.
+*/
 class graph{
 public:
     graph(int graphSize = 50,double edgeDinsity = 0.2,int minCoast = 1,int maxCoast = 10)
@@ -56,7 +68,7 @@ public:
     }
     }
 
-    vector<int> shortestPath(int sourceNode,int distinationNode)
+    vector<int> shortestPath(int sourceNode)
     {
         priority_queue<pair<int,int> > pq;
         static vector<int> coast(this->graphVertix,INT_MAX); ///array to hold the coast value for each node
@@ -96,18 +108,25 @@ int main()
 
     for(int i = 0 ; i < 2 ; i++)///loop throght desired diensities
     {
-        graph g(graphSize,diensity[i],minDis,maxDis);///create new graph
-        double shortestPathAverage =0;     ///variable to hold average path length from node 0 to all other nodes in graph
-
-        vector<int> a = g.shortestPath(0,1);  ///vector to hold coast array returned from
-
-        for(int j =1 ; j < graphSize ; j++)  ///accumlate the coast to reach each node from node 0
+        double overallAverage = 0;///give the total average of multiple runs
+        int runTimes = 100; ///number of run times
+        for(int k =0 ; k < runTimes ; k++)
         {
-            shortestPathAverage += a[j];
+            graph g(graphSize,diensity[i],minDis,maxDis);///create new graph
+            double shortestPathAverage =0;     ///variable to hold average path length from node 0 to all other nodes in graph
+
+            vector<int> a = g.shortestPath(0);  ///vector to hold coast array returned from
+
+            for(int j =1 ; j < graphSize ; j++)  ///accumlate the coast to reach each node from node 0
+            {
+                shortestPathAverage += (a[j] == INT_MAX)?0:a[j];///check for no connectivity
+            }
+            overallAverage += (shortestPathAverage /graphSize);
         }
 
+
         ///print out result
-            cout<<"with diensity of :"<<diensity[i]<<" Average Path Length :"<<shortestPathAverage /graphSize<<endl;
+            cout<<"with diensity of :"<<diensity[i]<<" Average Path Length :"<<overallAverage/runTimes<<endl;
     }
 
     return 0;

@@ -1,4 +1,4 @@
-# cpp for c programmers
+# c++ Projects
 
  this repo holds my assignment and c++ projects
 

@@ -4,6 +4,6 @@
 
 ## current projects
 
- c++ for c programmers partA course assignment.
+ ### A. c++ for c programmers partA course projects.
 
- udacity c++ nanodegree assignment. 
+ ### B. udacity c++ nanodegree projects. 

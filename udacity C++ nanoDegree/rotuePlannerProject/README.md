@@ -1,8 +1,15 @@
 # Route Planning Project
+#### A route planner that can find a path between any two points on a real map of a real city using io2d library , google teste library  for testing and pugixml for parsing xml files from open street map data to the project.
 
-This repo contains the starter code for the Route Planning project.
+![map](https://github.com/Abdelbary/cpp_learning_projects/blob/master/udacity%20C++%20nanoDegree/rotuePlannerProject/map.png?raw=true)
 
-<img src="map.png" width="600" height="450" />
+
+## Code structure
+
+This diagram shows the overall class structure for the project.
+
+![code-structure](https://github.com/Abdelbary/cpp_learning_projects/blob/master/udacity%20C++%20nanoDegree/rotuePlannerProject/code-structure.png?raw=true)
+
 
 ## Cloning
 

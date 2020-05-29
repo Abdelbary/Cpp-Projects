@@ -1,9 +1,9 @@
-# c++ Projects
+# C++ Projects
 
  this repo holds my assignment and c++ projects
 
 ## current projects
 
- ### A. c++ for c programmers partA course projects.
+ ### A. C++ for c programmers partA course projects.
 
- ### B. udacity c++ nanodegree projects. 
+ ### B. udacity C++ nanodegree projects. 

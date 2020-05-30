@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++17   -std=gnu++1z
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/workspace/CppND-Route-Planning-Project/thirdparty/pugixml/src -isystem /home/workspace/CppND-Route-Planning-Project/thirdparty/googletest/googletest/include -isystem /home/workspace/CppND-Route-Planning-Project/thirdparty/googletest/googletest 
+CXX_INCLUDES = -I"/home/workspace/git/cpp_learning_projects/udacity C++ nanoDegree/rotuePlannerProject/thirdparty/pugixml/src" -isystem "/home/workspace/git/cpp_learning_projects/udacity C++ nanoDegree/rotuePlannerProject/thirdparty/googletest/googletest/include" -isystem "/home/workspace/git/cpp_learning_projects/udacity C++ nanoDegree/rotuePlannerProject/thirdparty/googletest/googletest" 
 

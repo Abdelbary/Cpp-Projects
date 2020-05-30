@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++17   -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/workspace/CppND-Route-Planning-Project/thirdparty/googletest/googlemock/include -isystem /home/workspace/CppND-Route-Planning-Project/thirdparty/googletest/googlemock -isystem /home/workspace/CppND-Route-Planning-Project/thirdparty/googletest/googletest/include -isystem /home/workspace/CppND-Route-Planning-Project/thirdparty/googletest/googletest 
+CXX_INCLUDES = -isystem "/home/workspace/git/cpp_learning_projects/udacity C++ nanoDegree/rotuePlannerProject/thirdparty/googletest/googlemock/include" -isystem "/home/workspace/git/cpp_learning_projects/udacity C++ nanoDegree/rotuePlannerProject/thirdparty/googletest/googlemock" -isystem "/home/workspace/git/cpp_learning_projects/udacity C++ nanoDegree/rotuePlannerProject/thirdparty/googletest/googletest/include" -isystem "/home/workspace/git/cpp_learning_projects/udacity C++ nanoDegree/rotuePlannerProject/thirdparty/googletest/googletest" 
 

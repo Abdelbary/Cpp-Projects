@@ -113,7 +113,6 @@ void RoutePlanner::AStarSearch() {
     current_node = start_node;
     while( !open_list.empty() && current_node->distance(*(this->end_node)) != 0)
     {
-        static int i = 0 ;
         current_node = this->NextNode();
         this->AddNeighbors(current_node);
     }

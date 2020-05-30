@@ -59,6 +59,7 @@ int main(int argc, const char **argv)
     float start_y;
     float end_x;
     float end_y;
+    std::cout<<"entre start and end points as follows:\nxstart ystart xend yend\n";
     std::cin>>start_x>>start_y>>end_x>>end_y;
     // Build Model.
     RouteModel model{osm_data};
